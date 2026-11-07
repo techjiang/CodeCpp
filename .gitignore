@@ -1,0 +1,11 @@
+node_modules/
+dist/
+release/
+.codecpp/
+.playwright-cli/
+build/
+*.zip
+*.log
+CodeCpp.exe
+CodeCpp-Setup*.exe
+CodeCpp.Uninstall.exe

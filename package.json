@@ -1,0 +1,37 @@
+{
+  "name": "codecpp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CodeCpp - 面向 C 语言的桌面集成开发环境（Electron APP）· 同一个世界，同一个互联网！",
+  "author": "科技酱 <official@tech.asoe.cn> (https://www.asoe.cn)",
+  "homepage": "https://www.asoe.cn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/techjiang/CodeCpp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techjiang/CodeCpp/issues",
+    "email": "official@tech.asoe.cn"
+  },
+  "type": "commonjs",
+  "main": "desktop/main.js",
+  "scripts": {
+    "start": "electron .",
+    "app": "electron .",
+    "app:dev": "electron . --dev",
+    "app:selftest": "electron . --self-test",
+    "browser": "node server/index.js",
+    "test": "node --test tests/core.test.js tests/api.test.js tests/compiler.test.js tests/environment.test.js",
+    "build:icon": "node desktop/gen-icon.js",
+    "build:exe": "node desktop/build-launcher.js",
+    "dist": "node desktop/build-portable.js",
+    "build:release": "node desktop/build-release.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^43.7.7"
+  }
+}
